@@ -23,6 +23,7 @@ public class BoardServiceImpl implements BoardService {
         } else {
             queryResult = boardMapper.updateBoard(pararms);
         }
+
         return (queryResult == 1) ? true : false;
     }
 
